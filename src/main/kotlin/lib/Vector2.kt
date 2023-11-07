@@ -47,6 +47,10 @@ class Vector2(var x: Float, var y: Float) {
         return Vector2(x * b, y * b)
     }
 
+    operator fun times(b: Int): Vector2 {
+        return Vector2(x * b, y * b)
+    }
+
     operator fun get(axis: Axis): Float {
         return when (axis) {
             Axis.X -> x;
