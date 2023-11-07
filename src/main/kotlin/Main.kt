@@ -1,5 +1,5 @@
-import days.Day6
+import days.Day16
 
-fun main(args: Array<String>) {
-    val day6 = Day6()
+fun main() {
+    Day16();
 }
