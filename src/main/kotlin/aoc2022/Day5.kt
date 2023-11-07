@@ -1,7 +1,6 @@
-package days
+package aoc2022
 
 import java.io.File
-import java.util.Queue
 
 class Day5 {
     private val stacks: ArrayList<ArrayDeque<Char>> = ArrayList();

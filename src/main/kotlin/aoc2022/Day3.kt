@@ -1,4 +1,4 @@
-package days
+package aoc2022
 
 import java.io.File
 import kotlin.collections.ArrayList
