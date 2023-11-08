@@ -1,4 +1,5 @@
 import lib.Puzzle
+import org.jetbrains.annotations.TestOnly
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
