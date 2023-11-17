@@ -41,14 +41,16 @@ class Day9: Puzzle() {
         return lowPoints
     }
 
+    private var checkedNeighbours = mutableListOf<Vector2>();
     private fun findBasinNeighbours(pos: Vector2): List<Vector2> {
+        checkedNeighbours.add(pos)
         val n = arrayOf(
             pos.neighbours[Direction.NORTH],
             pos.neighbours[Direction.EAST],
             pos.neighbours[Direction.SOUTH],
             pos.neighbours[Direction.WEST],
         ).filter {
-            grid[it] != null && grid[it]!! != 9L
+            grid[it] != null && grid[it]!! != 9L&& !checkedNeighbours.contains(it)
         }
 
         val p = n.map {
@@ -75,11 +77,14 @@ class Day9: Puzzle() {
         buildGrid()
         val lowPoints = getLowPoints()
 
-        val basins = lowPoints.map {
+        val largeBasinSize = lowPoints.map {
             findBasinNeighbours(it)
+        }.map { basin ->
+            basin.toSet()
+        }.sortedBy { b -> b.size }.takeLast(3).fold(1L) { acc, v ->
+            v.size * acc
         }
 
-
-        return 0L;
+        return largeBasinSize;
     }
 }

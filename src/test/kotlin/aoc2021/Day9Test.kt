@@ -7,6 +7,6 @@ class Day9Test: PuzzleTest(
     "Day9",
     15,
     475,
-    0,
-    0
+    1134,
+    1092012
 )

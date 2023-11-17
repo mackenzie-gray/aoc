@@ -18,11 +18,13 @@ abstract class PuzzleTest(
         instance.loadInput("$fileBase/mini/$name");
         assertEquals(aMini, instance.partA())
     }
+
     @Test
     fun partA() {
         instance.loadInput("$fileBase/full/$name");
         assertEquals(aFull, instance.partA())
     }
+
     @Test
     fun partBMini() {
         instance.loadInput("$fileBase/mini/$name");
