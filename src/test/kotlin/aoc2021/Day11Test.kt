@@ -3,7 +3,7 @@ package aoc2021
 import PuzzleTest
 
 class Day11Test: PuzzleTest(
-    Day11(),
+    Day11::class.java,
     "Day11",
     1656,
     1691,

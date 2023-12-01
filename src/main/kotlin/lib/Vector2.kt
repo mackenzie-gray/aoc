@@ -18,6 +18,13 @@ class Vector2(var x: Float, var y: Float) {
             Direction.NORTHWEST to Vector2(x - 1, y + 1),
     )
 
+    val simpleNeighbours get() = mapOf(
+        Direction.NORTH to Vector2(x, y + 1),
+        Direction.EAST to Vector2(x + 1, y),
+        Direction.SOUTH to Vector2(x, y - 1),
+        Direction.WEST to Vector2(x - 1, y),
+    )
+
     override fun toString(): String {
         return "($x, $y)"
     }
