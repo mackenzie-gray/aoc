@@ -5,10 +5,6 @@ import lib.Vector2
 
 class Day13: Puzzle() {
 
-    override fun reset() {
-        TODO("Not yet implemented")
-    }
-
     private fun foldX(x: Float, dots: MutableSet<Vector2>): MutableSet<Vector2> {
         var newDots = mutableSetOf<Vector2>();
         dots.forEach {

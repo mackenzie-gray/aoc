@@ -4,10 +4,6 @@ import lib.Puzzle
 
 class Day14: Puzzle() {
 
-    override fun reset() {
-        TODO("Not yet implemented")
-    }
-
     fun expand(s: String, rules: Map<String, String>): String {
         var insert = "";
         s.windowed(2, 1) {

@@ -24,10 +24,6 @@ class Day10: Puzzle() {
         return tags.keys.contains(tag)
     }
 
-    override fun reset() {
-        TODO("Not yet implemented")
-    }
-
     private fun findCorruptLine(line: String): Char? {
         var closingQueue = ArrayDeque<Char>();
 

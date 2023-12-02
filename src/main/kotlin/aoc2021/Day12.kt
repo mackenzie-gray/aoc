@@ -4,10 +4,6 @@ import lib.Puzzle
 
 class Day12: Puzzle() {
 
-    override fun reset() {
-        TODO("Not yet implemented")
-    }
-
     private fun buildGraph(): Map<String, List<String>> {
         var graph = mutableMapOf<String, MutableList<String>>()
         input.forEach {

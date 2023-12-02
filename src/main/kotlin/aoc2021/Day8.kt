@@ -4,9 +4,6 @@ import lib.Puzzle
 import kotlin.math.abs
 
 class Day8: Puzzle() {
-    override fun reset () {
-    }
-
     override fun partA(): Long {
         var count = 0L;
         input.forEach() {

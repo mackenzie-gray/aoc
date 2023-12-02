@@ -11,9 +11,6 @@ class Day15: Puzzle() {
         var predecessor: Node? = null
     }
 
-    override fun reset() {
-        TODO("Not yet implemented")
-    }
 
     override fun partA(): Long {
         var graph = mutableMapOf<Vector2, Node>();

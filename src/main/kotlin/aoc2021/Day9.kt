@@ -6,9 +6,6 @@ import lib.Vector2
 
 class Day9: Puzzle() {
     var grid: MutableMap<Vector2, Long> = mutableMapOf();
-    override fun reset() {
-        TODO("Not yet implemented")
-    }
 
     private fun isLowPoint(pos: Vector2): Boolean {
         val n = arrayOf(

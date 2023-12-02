@@ -4,8 +4,6 @@ import lib.Puzzle
 import kotlin.math.abs
 
 class Day7: Puzzle() {
-    override fun reset () {
-    }
 
     private fun getPositionCost(position: Long, input: List<Long>): Long {
         val list: MutableList<Long> = mutableListOf(0)

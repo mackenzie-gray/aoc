@@ -37,7 +37,4 @@ class Day1: Puzzle() {
         }.toLong()
     }
 
-    override fun reset() {
-        TODO("Not yet implemented")
-    }
 }

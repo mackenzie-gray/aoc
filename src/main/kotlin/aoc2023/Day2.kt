@@ -63,7 +63,4 @@ class Day2: Puzzle(
         }
     }
 
-    override fun reset() {
-        TODO("Not yet implemented")
-    }
 }

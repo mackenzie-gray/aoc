@@ -7,11 +7,6 @@ import java.util.Deque
 
 class Day11: Puzzle() {
 
-    override fun reset() {
-        TODO("Not yet implemented")
-    }
-
-
     private fun parseGrid(): MutableMap<Vector2, Int> {
         val grid = mutableMapOf<Vector2, Int>();
         input.reversed().forEachIndexed { y , s ->
