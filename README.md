@@ -1,4 +1,6 @@
-# Advent of Code aoc2022
+# Advent of Code
 
-Advent of Code aoc2022 
-Problems done in kotlin
+Advent of Code solutions and utils in kotlin.
+
+WIP Til I get all the stars
+
