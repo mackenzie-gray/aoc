@@ -24,5 +24,51 @@ enum class Direction(var vec: Vector2) {
     ),
     NORTHWEST(
         Vector2(-1, 1)
-    )
+    );
+
+    fun turnRight(): Direction {
+        return when(this) {
+            NORTH -> NORTHEAST
+            NORTHEAST -> EAST
+            EAST -> SOUTHEAST
+            SOUTHEAST -> SOUTH
+            SOUTH -> SOUTHWEST
+            SOUTHWEST -> WEST
+            WEST -> NORTHWEST
+            NORTHWEST -> NORTH
+        }
+    }
+
+    fun turnRightSimple(): Direction {
+        return when(this) {
+            NORTH -> EAST
+            EAST -> SOUTH
+            SOUTH -> WEST
+            WEST -> NORTH
+            else -> throw Exception("Invalid direction")
+        }
+    }
+
+    fun turnLeft(): Direction {
+        return when(this) {
+            NORTH -> NORTHWEST
+            NORTHWEST -> WEST
+            WEST -> SOUTHWEST
+            SOUTHWEST -> SOUTH
+            SOUTH -> SOUTHEAST
+            SOUTHEAST -> EAST
+            EAST -> NORTHEAST
+            NORTHEAST -> NORTH
+        }
+    }
+
+    fun turnLeftSimple(): Direction {
+        return when(this) {
+            NORTH -> WEST
+            WEST -> SOUTH
+            SOUTH -> EAST
+            EAST -> NORTH
+            else -> throw Exception("Invalid direction")
+        }
+    }
 }
